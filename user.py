@@ -43,8 +43,8 @@ class User:
         if user.limite_usuario:
             limite = user.limite_usuario
         else:
-            limite = 5
+            limite = 4
 
-        users_all = User.search([('id', '>', 1)])
+        users_all = User.search([('id', '>', 2)])
         if len(users_all) > limite:
             cls.raise_user_error('No puede agregar usuarios. Ha pasado el limite')
