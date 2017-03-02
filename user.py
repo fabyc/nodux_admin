@@ -1,5 +1,3 @@
-#This file is part of Tryton.  The COPYRIGHT file at the top level of
-#this repository contains the full copyright notices and license terms.
 #! -*- coding: utf8 -*-
 from trytond.pool import *
 from trytond.model import fields
@@ -31,7 +29,7 @@ class User:
 
         for user_admin in users:
             if user_admin.id == 1 and user_id != 1:
-                cls.raise_user_error ('No puede modificar los datos de ADMINISTRADOR')
+                cls.raise_user_error('No puede modificar los datos de ADMINISTRADOR')
 
             for group in user_admin.groups:
                 if group.id == 1 and user_id != 1:
