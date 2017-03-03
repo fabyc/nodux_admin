@@ -105,5 +105,22 @@
             <field name="menu" ref="ir.menu_administration"/>
             <field name="group" ref="group_system_admin"/>
         </record>
+
+        <!--Group-->
+        <record model="res.group" id="group_change_company">
+            <field name="name">Nodux - Modificar empresa</field>
+        </record>
+
+        <record model="res.user-res.group"
+            id="user_admin_group_change_company">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_change_company"/>
+        </record>
+
+        <record model="res.user-res.group"
+            id="user_trigger_group_change_company">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_change_company"/>
+        </record>
     </data>
 </tryton>

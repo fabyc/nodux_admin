@@ -2,6 +2,10 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
+msgctxt "field:company.company,permission:"
+msgid "Permission"
+msgstr "Permisos"
+
 msgctxt "field:res.user,limite_usuario:"
 msgid "Limite de Usuarios del Sistema"
 msgstr ""
@@ -17,6 +21,10 @@ msgstr "Usuarios Nodux"
 msgctxt "model:ir.ui.menu,name:menu_user_form"
 msgid "Users"
 msgstr "Usuarios Nodux"
+
+msgctxt "model:res.group,name:group_change_company"
+msgid "Nodux - Modificar empresa"
+msgstr ""
 
 msgctxt "model:res.group,name:group_system_admin"
 msgid "Nodux - Administrador de Sistema"
